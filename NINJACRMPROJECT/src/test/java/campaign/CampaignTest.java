@@ -1,6 +1,7 @@
 package campaign;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import config.baseclass;
@@ -14,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pom.CreateCampaignPage;
 import pom.HomePage;
-
+@Listeners(listener.ListenerImplementation.class)
 public class CampaignTest extends baseclass {
 	@Test(groups = "smoke")
 	public void createCampaignWithMandatoryFieldTest() throws IOException {

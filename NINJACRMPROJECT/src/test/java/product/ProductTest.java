@@ -4,12 +4,13 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import config.baseclass;
 import pom.AddProductPage;
 import pom.HomePage;
-
+@Listeners(listener.ListenerImplementation.class)
 public class ProductTest extends baseclass {
 	@Test
 	public void createProductTest() throws EncryptedDocumentException, IOException {

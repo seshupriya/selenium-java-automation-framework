@@ -1,4 +1,7 @@
 browser:chrome
 url:http://49.249.28.218:8098/
+assignment_url:https://www.saucedemo.com/
+assignment_username:standard_user
+assignment_password:secret_sauce
 username:rmgyantra
 password:rmgy@9999
